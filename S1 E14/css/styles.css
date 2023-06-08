@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+:root {
+    --pink : #D885A3;
+    --blue : #C0DBEA;
+    --shadow-color : rgba(0,0,0,0.1);
+}
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+body {
+    /* background-image: url('images/background.svg'); */
+    background: var(--blue);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left,  var(--pink), var(--blue));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,  var(--pink), var(--blue)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 200px 175px;
+    font-family: 'Poppins';
+}
+
+.card {
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 10px 15px -3px var(--shadow-color);
+}
+
+.white-area {
+    padding: 106px 88px;
+}
+
+.white-area .logo {
+    color: var(--pink);
+    text-shadow: 1px 1px 2px var(--shadow-color);
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.white-area .main-title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 84px;
+}
+
+.white-area .login-form .form-group {
+    margin-bottom: 10px;
+}
+
+.white-area .login-form  .form-group input {
+    width: 100%;
+    display: block;
+    height: 46px;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 3px solid var(--blue);
+    /* border-color :  var(--blue);
+    border-style: solid;
+    border-width: 3px; */
+}
+
+.white-area .login-form  .form-group input:focus {
+    border-color: var(--pink);
+    outline: none;
+    /* outline: unset; */
+}
+
+.white-area .login-form  .form-group .password-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.white-area .login-form  .form-group .forget-link {
+    color: #B7B7B7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.white-area .login-form  .form-group .forget-link:hover {
+    color: var(--pink);
+}
+
+.blue-area {
+    border-radius: 40px;
+    background-color: var(--blue);
+    width: 25%;
+}
+

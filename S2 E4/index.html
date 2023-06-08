@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> HTML Forms </title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <form action="#" method="GET" class="general-form">
+
+        <daiv class="form-div inputs">
+
+            <div class="form-group">
+                <label for="first-name"> first name </label>
+                <input type="text" id="first-name" name="first_name">
+            </div>
+            
+            <div class="form-group">
+                <label for="last-name"> last name </label>
+                <input type="text" id="last-name" name="last_name">
+            </div> 
+
+            <div class="form-group">
+                <label for="phone-number"> phone number </label>
+                <input type="text" id="phone-number" name="phone_number" inputmode="numeric">
+            </div>  
+                      
+            <div class="form-group">
+                <label for="birthday"> birthday </label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+
+            <div class="form-group">
+                <label for="email"> email </label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="website"> website </label>
+                <input type="url" id="website" name="website">
+            </div>
+
+            <div class="form-group">
+                <label for="income"> income (USD) </label>
+                <input type="number" id="income" name="income" step="10">
+            </div>
+
+            <div class="form-group">
+                <label for="region"> select your region </label>
+                <select name="region" id="region">
+                    <option value=""> -- Choose -- </option>
+                    <option value="asia"> Asia </option>
+                    <option value="africa"> Africa </option>
+                    <option value="oceania"> Oceania  </option>
+                    <option value="america"> America  </option>
+                    <option value="europe"> Europe  </option>
+                </select>
+            </div>
+
+        </daiv>
+
+        <hr>
+
+        <div class="form-div">
+
+            <div class="form-group column">
+                <label> <input type="checkbox" name="countries"> <span> United States </span> </label>
+                <label> <input type="checkbox" name="countries"> <span> Brazil </span> </label>
+                <label> <input type="checkbox" name="countries"> <span> Canada </span> </label>
+                <label> <input type="checkbox" name="countries"> <span> France </span> </label>
+            </div>
+
+            <div class="form-group column">
+                <label> <input type="checkbox" name="countries"> <span> Spain </span> </label>
+                <label> <input type="checkbox" name="countries"> <span> Germany </span> </label>
+                <label> <input type="checkbox" name="countries"> <span> Netherlands </span> </label>
+                <label> <input type="checkbox" name="countries"> <span> Poland </span> </label>
+            </div>
+
+            <div class="form-group column">
+                <label> <input type="checkbox" name="countries"> <span> China </span> </label>
+                <label> <input type="checkbox" name="countries"> <span> South Korea </span> </label>
+                <label> <input type="checkbox" name="countries"> <span> Japan </span> </label>
+                <label> <input type="checkbox" name="countries"> <span> Egypt </span> </label>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="form-div">
+
+            <div class="form-group column">
+                <label> <input type="radio" name="hear"> <span> Friends & Family </span> </label>
+                <label> <input type="radio" name="hear"> <span> Co-Workers </span> </label>
+                <label> <input type="radio" name="hear"> <span> Social Media </span> </label>
+                <label> <input type="radio" name="hear"> <span> Email </span> </label>
+            </div>
+
+            <div class="form-group column">
+                <label> <input type="radio" name="hear"> <span> TV </span> </label>
+                <label> <input type="radio" name="hear"> <span> YouTube Ads </span> </label>
+                <label> <input type="radio" name="hear"> <span> City Billboards </span> </label>
+                <label> <input type="radio" name="hear"> <span> Other </span> </label>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <button type="submit"> Save </button>
+
+    </form>
+
+</body>
+</html>

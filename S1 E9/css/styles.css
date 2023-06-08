@@ -1,0 +1,29 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url('images/background.svg'); */
+    background: #C0DBEA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #D885A3, #C0DBEA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #D885A3, #C0DBEA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 200px 175px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.white-area {
+    padding: 106px 88px;
+}
+
+.blue-area {
+    border-radius: 40px;
+    background-color: #C0DBEA;
+    width: 25%;
+}

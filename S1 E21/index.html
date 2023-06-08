@@ -1,0 +1,85 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+
+        <!-- card section -->
+        <div class="card">
+
+            <!-- white area -->
+            <div class="white-area">
+
+                <div>
+
+                    <h2 class="logo"> Logo Here </h2>
+
+                    <p> Welcome Back !!! </p>
+        
+                    <h1 CLASS="main-title"> Log In </h1>
+
+                </div>
+
+               <form class="login-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="email"> Email </label>
+                        <input type="text" id="email">
+                    </div>
+
+                    <div class="form-group test">
+                       <div class="password-section">
+                            <label for="password"> Password </label>
+                            <a href="#" class="forget-link"> Forgot Password? </a>
+                       </div>
+                        <input type="password" id="password">
+                        <span class="material-symbols-outlined visibilty-icon visibilty-on" id="visibilty-on">
+                            visibility
+                        </span>
+                        <span class="material-symbols-outlined visibilty-icon visibilty-off" id="visibilty-off">
+                            visibility_off
+                        </span>
+                    </div>
+
+                    <div class="form-group btn-container">
+                        <!-- <input type="button" value="Login"> -->
+                        <button class="btn">
+                            <span class="btn-text"> login in </span>
+                            <span class="material-symbols-outlined">
+                                line_end_arrow_notch
+                            </span> 
+                        </button>
+                    </div>
+
+               </form>
+
+                <div class="continue-section">
+                    <p> or continue with </p>
+                    <button class="social-link"> <img src="images/google.svg" alt="google logo"> </button>
+                    <button class="social-link"> <img src="images/github.svg" alt="github logo"> </button>
+                    <button class="social-link"> <img src="images/facebook.svg" alt="facebook logo"> </button>
+                </div>
+
+                <div class="signup-section">
+                    <span> Don’t have an account yet? </span>
+                    <a href="#" class="signup-link"> Sign up for free </a>
+                </div>
+
+            </div>
+
+            <!-- blue area -->
+            <div class="blue-area">
+                <img src="images/person.svg" class="person" alt="Person">
+                <img src="images/plants.svg" class="plants" alt="Plants">
+            </div>
+
+        </div>
+
+        
+        <script src="js/scripts.js"></script>
+        
+    </body>
+    </html>

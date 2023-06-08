@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general-form input, .general-form select {
+    display: block;
+    width: 100%;
+}
+
+.general-form > .form-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.general-form > .form-div > .form-group {
+    width: 25%;
+    padding: 10px;
+}

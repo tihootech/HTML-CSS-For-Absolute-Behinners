@@ -1,0 +1,40 @@
+:root {
+    --pink : #D885A3;
+    --blue : #C0DBEA;
+}
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url('images/background.svg'); */
+    background: var(--blue);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left,  var(--pink), var(--blue));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,  var(--pink), var(--blue)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 200px 175px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 4px 6px 2px #aaaaaa;
+}
+
+.white-area {
+    padding: 106px 88px;
+}
+
+.white-area .logo {
+    color: var(--pink);
+    text-shadow: 2px 2px 2px #aaaaaa;
+}
+
+.blue-area {
+    border-radius: 40px;
+    background-color: var(--blue);
+    width: 25%;
+}

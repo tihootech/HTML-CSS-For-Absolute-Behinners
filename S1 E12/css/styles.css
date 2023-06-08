@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+:root {
+    --pink : #D885A3;
+    --blue : #C0DBEA;
+    --shadow-color : rgba(0,0,0,0.1);
+}
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+body {
+    /* background-image: url('images/background.svg'); */
+    background: var(--blue);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left,  var(--pink), var(--blue));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,  var(--pink), var(--blue)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 200px 175px;
+    font-family: 'Poppins';
+}
+
+.card {
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 10px 15px -3px var(--shadow-color);
+}
+
+.white-area {
+    padding: 106px 88px;
+}
+
+.white-area .logo {
+    color: var(--pink);
+    text-shadow: 1px 1px 2px var(--shadow-color);
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.white-area .main-title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 84px;
+}
+
+.white-area .login-form input {
+    width: 100%;
+    display: block;
+}
+
+.blue-area {
+    border-radius: 40px;
+    background-color: var(--blue);
+    width: 25%;
+}
+
