@@ -1,0 +1,98 @@
+/* IMPORTING FONTS */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&display=swap');
+
+
+/* ROOT VARIABLES */
+
+:root {
+    --dark : #100E17;
+    --primary : #0BBBA0;
+    --white : #E8E7E8;
+}
+
+
+/* GENERAL SELECTORS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: 'Roboto';
+}
+
+/* NAVBAR (MENU) */
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.navbar .logo-section > .logo {
+    height: 60px;
+    width: 60px;
+}
+
+.navbar > .menu {
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+}
+
+.navbar > .menu > .menu-item {
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+
+.navbar > .menu > .menu-item > .menu-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .4s;
+    padding: 10px 0;
+}
+
+.navbar > .menu > .menu-item > .menu-link:hover {
+    color: var(--primary);
+}
+
+.navbar > .menu > .menu-item > .menu-link.active {
+    border-bottom: 2px solid var(--white);
+}
+
+/* HEADER SECTION */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 0;
+}
+
+header > .hero > .intro {
+    background-color: var(--primary);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+}
+
+header > .img-section > .landing-img {
+    width: 425px;
+    height: 425px;
+    border-radius: 50%;
+    border: 20px solid #030304;
+    outline: 20px solid #0A090F;
+    padding: 10px;
+}

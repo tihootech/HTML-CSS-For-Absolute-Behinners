@@ -1,0 +1,46 @@
+/* IMPORTING FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;800&display=swap');
+
+
+/* ROOT VARIABLES */
+
+:root {
+    --dark : #100E17;
+    --primary : #0BBBA0;
+    --black : #030304;
+    --dark-gray : #0A090F;
+    --white : #E8E7E8;
+}
+
+
+/* GENERAL SELECTORS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+
+/* HEADER SECTION */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-section > .logo {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar > .menu {
+    list-style-type: none;
+    display: flex;
+}

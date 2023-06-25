@@ -1,0 +1,287 @@
+/* ADDING FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&display=swap');
+
+/* GENRAL SELECTORS */
+
+:root {
+    --primary : #1d3557;
+    --secondary : #457b9d;
+    --tertiary : #a8dadc;
+    --light-green : #f1faee;
+    --danger : #e63946;
+    --white : #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway';
+    background-color: var(--primary);
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+/*  ANIMATED BACKGROUND */
+  
+  .circle{
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px var(--secondary);
+  }
+  
+  .small{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+  }
+  
+  .medium{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+  }
+  
+  .large{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+  }
+  
+  .xlarge{
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+  }
+  
+  .xxlarge{
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+  }
+  
+  .shade1{
+    opacity: 0.2;
+  }
+  .shade2{
+    opacity: 0.5;
+  }
+  
+  .shade3{
+    opacity: 0.7;
+  }
+  
+  .shade4{
+    opacity: 0.8;
+  }
+  
+  .shade5{
+    opacity: 0.9;
+  }
+  
+  @keyframes ripple{
+    0%{
+      transform: scale(0.8);
+    }
+    
+    50%{
+      transform: scale(1.2);
+    }
+    
+    100%{
+      transform: scale(0.8);
+    }
+  }
+  
+
+/*  FORM CUSTOMIZATIONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.general-form {
+    margin: 60px;
+    background-color: var(--light-green);
+    padding: 36px;
+    border: 3px solid var(--tertiary);
+    border-radius: 12px;
+}
+
+.general-form > hr {
+    border-color: var(--tertiary);
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px 0;
+}
+
+.general-form .heading {
+    margin: 10px;
+    color: var(--primary);
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.general-form input, .general-form select {
+    display: block;
+    width: 100%;
+}
+
+.general-form .form-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.general-form .form-div > .form-group {
+    width: 25%;
+    padding: 10px;
+}
+
+
+.general-form .inputs label {
+    display: block;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.general-form .inputs input, .general-form .inputs select {
+    height: 46px;
+    padding: 5px 15px ;
+    border: 2px solid var(--tertiary);
+    border-radius: 8px;
+}
+
+.general-form .inputs input:focus, .general-form .inputs select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.general-form > .boxes {
+    display: flex;
+}
+
+.general-form > .boxes > .checkboxes {
+    width: 60%;
+
+}
+.general-form > .boxes > .radios {
+    width: 40%;
+}
+
+.form-div > .form-group.column > label {
+    display: block;
+    color: var(--primary);
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.form-div > .form-group.column > label > input {
+    display: inline-block;
+    width: unset;
+    accent-color: var(--secondary);
+    transform: scale(1.5);
+    margin-right: 5px;
+}
+
+/*  BUTTON (BTN) */
+.primary-button {
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    border: 1px solid var(--primary);
+    padding: 0.8rem 2.1rem;
+    background-image: url('../images/btn-bg.svg');
+    background-color: var(--primary);
+    background-size: 200%;
+    background-position: 200%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transition-property: background-position, border, color;
+    position: relative;
+    z-index: 1;
+}
+
+.primary-button:hover {
+    border: 1px solid var(--tertiary);
+    color: white;
+    background-position: 40%;
+}
+
+.primary-button:before {
+    content: "";
+    position: absolute;
+    background-color: var(--primary);
+    width: 0.2rem;
+    height: 0.2rem;
+    top: -1px;
+    left: -1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.primary-button:hover:before {
+    background-color: white;
+}
+
+.primary-button:hover:after {
+    background-color: white;
+}
+
+.primary-button:after {
+    content: "";
+    position: absolute;
+    background-color: var(--tertiary);
+    width: 0.3rem;
+    height: 0.3rem;
+    bottom: -1px;
+    right: -1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.button-borders {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.button-borders:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    top: -0.3em;
+    border: 1px solid var(--primary);
+    border-bottom: 0px;
+      /* opacity: 0.3; */
+}
+
+.button-borders:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    bottom: -0.3em;
+    border: 1px solid var(--primary);
+    border-top: 0px;
+    /* opacity: 0.3; */
+    z-index: 0;
+}
+
+.shape {
+    fill: var(--primary);
+}

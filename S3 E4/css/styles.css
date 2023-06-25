@@ -1,0 +1,78 @@
+/* IMPORTING FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&display=swap');
+
+
+/* ROOT VARIABLES */
+
+:root {
+    --dark : #100E17;
+    --primary : #0BBBA0;
+    --black : #030304;
+    --dark-gray : #0A090F;
+    --white : #E8E7E8;
+}
+
+
+/* GENERAL SELECTORS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: 'Roboto';
+}
+
+/* NAVBAR (MENU) */
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.navbar .logo-section > .logo {
+    height: 60px;
+    width: 60px;
+}
+
+.navbar > .menu {
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+}
+
+.navbar > .menu > .menu-item {
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+
+.navbar > .menu > .menu-item > .menu-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .4s;
+    padding: 10px 0;
+}
+
+.navbar > .menu > .menu-item > .menu-link:hover {
+    color: var(--primary);
+}
+
+.navbar > .menu > .menu-item > .menu-link.active {
+    border-bottom: 2px solid var(--white);
+}
+
+/* HEADER SECTION */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
